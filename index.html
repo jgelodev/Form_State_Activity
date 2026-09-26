@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Get in touch</h1>
+        <p class="subtitle">
+            Fill out the form below and we'll get back to you.
+        </p>
+
+        <form>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" placeholder="Jane" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" placeholder="Doe" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="jane@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="+1 555 000 0000">
+            </div>
+
+            <div class="input-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Acme Inc.">
+            </div>
+
+            <div class="input-group">
+                <label for="website">Website</label>
+                <input type="url" id="website" placeholder="https://example.com">
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="birth">Date of birth</label>
+                    <input type="date" id="birth">
+                </div>
+
+                <div class="input-group">
+                    <label for="budget">Budget</label>
+                    <input type="number" id="budget" placeholder="1000">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="" selected disabled>Select a country</option>
+                    <option>Philippines</option>
+                    <option>United States</option>
+                    <option>Japan</option>
+                    <option>South Korea</option>
+                    <option>Canada</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="topic">Topic</label>
+                <select id="topic" required>
+                    <option value="" selected disabled>Choose a topic</option>
+                    <option>General Inquiry</option>
+                    <option>Support</option>
+                    <option>Business</option>
+                    <option>Feedback</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell us more..." required></textarea>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox" required>
+                <span>I agree to the terms and conditions</span>
+            </label>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
